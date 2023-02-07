@@ -1,8 +1,10 @@
 export const Configs={
-    mongoose:{fullNodeUrl:'mongodb://fullnode:AAAbbb000@192.168.35.169:27017/tron',
+    mongoose:{fullNodeUrl:'mongodb://elyas:Abc123Abc@192.168.35.240:27017/trx?authSource=trx',
                 fullNodeConnectionName:"fullnode",
               txUrl:"mongodb://localhost:27017/tron",
-                txConnectionName:"transaction"},
+                txConnectionName:"transaction",
+                novintexUrl:"mongodb://hampa:xVoPg12FsUttA@192.168.10.200:40117/novintex2",
+                novintexConnectionName:"novintex"},
     postgres:{user: 'postgres',host: '192.168.10.200',database: 'exchange_main',password: 'HmpCo_2022_',port: 5432,},
     redis:{host:"192.168.10.200",port:6379},
     tron:{approveMaxUnit:"0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",amountChargeForApprove:"7"},

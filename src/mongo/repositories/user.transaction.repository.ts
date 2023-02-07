@@ -20,4 +20,8 @@ export class UserTransactionRepository{
     async deleteOneUserTx(txId:string){
         await this.userTransactionModel.findOneAndDelete({"transaction.transactionId":txId})
     }
+
+    async findAllUserTransaction(){
+    return await this.userTransactionModel.find().limit(100).lean()
+    }
 }

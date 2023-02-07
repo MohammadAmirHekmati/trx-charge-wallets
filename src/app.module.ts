@@ -12,7 +12,8 @@ import { GlobalModule } from './global/global.module';
   imports: [GlobalModule,TronModule, MongoModule, EmptyWalletModule, PostgresModule,
     ScheduleModule.forRoot(),
     MongooseModule.forRoot(Configs.mongoose.txUrl,{connectionName:Configs.mongoose.txConnectionName}),
-    MongooseModule.forRoot(Configs.mongoose.fullNodeUrl,{connectionName:Configs.mongoose.fullNodeConnectionName})
+    MongooseModule.forRoot(Configs.mongoose.fullNodeUrl,{connectionName:Configs.mongoose.fullNodeConnectionName}),
+    MongooseModule.forRoot(Configs.mongoose.novintexUrl,{connectionName:Configs.mongoose.novintexConnectionName})
   ]
 })
 export class AppModule {}

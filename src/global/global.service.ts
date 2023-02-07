@@ -16,7 +16,7 @@ export class GlobalService implements OnModuleInit {
                 amount:amount
             }
             console.log(params)
-            const res=await axios.get(Configs.updateWalletUrlTest, { params: {  amount:amount,address: address } })
+            const res=await axios.get(Configs.updateWalletUrlMain, { params: {  amount:amount,address: address } })
             return res
         } catch (e) {
             console.log("---------- update user amount Global Service ----------")
